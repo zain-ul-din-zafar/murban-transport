@@ -1,0 +1,39 @@
+/* CAROUSEL */
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  overflow-x: hidden;
+  z-index: 0;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: 50%;
+  min-height: 20vh;
+  filter: brightness(80%);
+}
+
+.hero-section {
+  width: 100%;
+  height: auto;
+  margin-top: clamp(2rem, 8vh, 8vh);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-section h1 {
+  color: var(--brand-color);
+}
+
+.hero-section p {
+  font-size: var(--md-text);
+}
+
+.footer-top {
+  transform: translateY(calc(calc(var(--rounded-lg) * 0.8) * -1));
+}

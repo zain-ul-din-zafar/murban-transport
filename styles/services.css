@@ -1,0 +1,90 @@
+.bg-overlay {
+  background: var(--brand-color);
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 60vh;
+  border-radius: 0 0 var(--rounded-lg) var(--rounded-lg);
+}
+
+.main-content {
+  height: 60vh;
+}
+
+.services-intro {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 10vh;
+  padding: 0rem 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .services-intro > div:nth-child(2) > img {
+    width: 40vw;
+  }
+}
+
+.services-intro > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  gap: 1rem;
+}
+
+.services-intro > div > p {
+  font-size: var(--normal-text);
+}
+
+.services-intro > div:nth-child(2) {
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-white {
+  background-color: var(--white);
+  color: var(--brand-color);
+}
+
+.copy-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8rem 0rem;
+  font-size: var(--sm-text);
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 3rem 1rem;
+  gap: 1rem;
+}
+
+.service-card {
+  width: 100%;
+  background-color: var(--light-gray);
+  border-radius: var(--rounded-sm);
+  padding: 1rem clamp(0.5rem, 2vw, 1rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 1000px) {
+  .service-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card > img {
+    width: min(40vw, 250px);
+  }
+}
+
+.service-card > p {
+  font-size: var(--sm-text);
+}
